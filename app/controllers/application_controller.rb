@@ -5,7 +5,8 @@ class ApplicationController < ActionController::Base
 
   def basic_auth
     authenticate_or_request_with_http_basic do |username, password|
-      username == 'admin' && password == '2222'
+      username == ENV["BASIC_AUTH_USER"] && password == ENV["BASIC_AUTH_PASSWORD"]  #環境変数を用いた、Basic認証
     end
   end
 end
+zC
