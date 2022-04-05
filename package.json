@@ -13,6 +13,6 @@
     "webpack-dev-server": "^3.11.0"
   },
   "engines": {
-    "node": "14.19.1"  //使用するnodeのバージョン指定
+    "node": "14.19.1"
   }
 }
